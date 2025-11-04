@@ -60,23 +60,33 @@
 </head>
 
 <body>
-    <h1>Conversor de kilómetros a millas</h1>
+    <h1>Calculadora de salario con bonificación</h1>
 
     <div class="container">
         <form>
             <div class="form-group">
-                <label for="kilometros">Kilometros</label>
-                <input type="number" id="kilometros" name="kilometros" oninput="ConvertirKmAMillas()">
+                <label for="salarioBase">Salario base</label>
+                <input type="number" id="salarioBase" name="salarioBase" oninput="CalcularSalario()">
             </div>
 
             <div class="form-group">
-                <label for="millas">Millas</label>
-                <input type="number" id="millas" name="millas" readonly>
+                <label for="bonificacion">Bonificación (%)</label>
+                <input type="number" id="bonificacion" name="bonificacion" oninput="CalcularSalario()">
+            </div>
+
+            <div class="form-group">
+                <label for="montoBonificacion">Monto de la bonificación</label>
+                <input type="number" id="montoBonificacion" name="montoBonificacion" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="salarioFinal">Salario final</label>
+                <input type="number" id="salarioFinal" name="salarioFinal" readonly>
             </div>
         </form>
     </div>
 
-    <script src="../Conversor de kilómetros a millas/kilómetrosAMillas.js"></script>
+    <script src="../Calculadora de salario con bonificación/SalarioConBonificacion.js"></script>
 </body>
 
 </html>
