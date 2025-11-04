@@ -60,43 +60,38 @@
 </head>
 
 <body>
-    <h1>Calculadora de prestamos</h1>
+    <h1>Calculadora de gastos mensuales</h1>
 
     <div class="container">
         <form>
             <div class="form-group">
-                <label for="montoPrestamo">Monto del préstamo</label>
-                <input type="number" id="montoPrestamo" name="montoPrestamo" oninput="CalcularPrestamo()">
+                <label for="alquiler">Alquiler</label>
+                <input type="number" id="alquiler" name="alquiler" oninput="CalcularGastosMensuales()">
             </div>
 
             <div class="form-group">
-                <label for="tasaInteresAnual">Tasa de interés anual (%)</label>
-                <input type="number" id="tasaInteresAnual" name="tasaInteresAnual" oninput="CalcularPrestamo()">
+                <label for="servicios">Servicios</label>
+                <input type="number" id="servicios" name="servicios" oninput="CalcularGastosMensuales()">
             </div>
 
             <div class="form-group">
-                <label for="cantidadCuota">Cantidad de cuotas</label>
-                <input type="number" id="cantidadCuota" name="cantidadCuota" oninput="CalcularPrestamo()">
+                <label for="comida">Comida</label>
+                <input type="number" id="comida" name="comida" oninput="CalcularGastosMensuales()">
             </div>
 
             <div class="form-group">
-                <label for="interesTotalPagar">Interés total a pagar</label>
-                <input type="number" id="interesTotalPagar" name="interesTotalPagar" readonly>
-            </div>
-    
-            <div class="form-group">
-                <label for="montoTotalInteres">Monto total con interés </label>
-                <input type="number" id="montoTotalInteres" name="montoTotalInteres" readonly>
+                <label for="transporte">Transporte</label>
+                <input type="number" id="transporte" name="transporte" oninput="CalcularGastosMensuales()">
             </div>
 
             <div class="form-group">
-                <label for="montoDeCadaCuota">Monto de cada cuota </label>
-                <input type="number" id="montoDeCadaCuota" name="montoDeCadaCuota" readonly>
+                <label for="totalGastos">Total gastos mensuales </label>
+                <input type="number" id="totalGastos" name="totalGastos" readonly>
             </div>
         </form>
     </div>
 
-    <script src="../Calculadora de préstamos/Calculadorapréstamos.js"></script>
+    <script src="../Calculadora de gastos mensuales/gastosMensuales.js"></script>
 </body>
 
 </html>
