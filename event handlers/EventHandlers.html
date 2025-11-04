@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+button {
+    margin: 10px;
+    cursor: pointer;
+}
+h3 {
+    color: #555;
+    margin-top: 20px;
+}
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+p {
+   font-size: 16px;
+   color: #007BFF;
+   margin-top: -10px;
+   margin-bottom: 10px;
+}
+</style>
+<body>
+
+    <div class="container">
+        <h1>Eventos del mouse</h1>
+        <button id="Click" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Haz clic aquí!</button>
+        <button id="DobleClick" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Hacer doble clic!</button>
+        <button id="MouseoverMouseout" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Pásame el mouse!</button>
+        <button id="MousedownMouseup" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Presiona el botón!</button>
+        <button id="Mousemove" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Mueve el mouse!</button>                
+    </div>
+
+    <div class="container">
+        <h1>Eventos del teclado</h1>
+        <button id="Keydown" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Presiona la tecla!</button>
+        <button id="Keypress" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Mantén pulsada la tecla!</button>
+        <button id="Keyup" style="padding:15px 30px; font-size:16px; border-radius:8px;">¡Suelta la tecla!</button>       
+    </div>
+
+    <div class="container">
+        <h1>Eventos de formulario</h1>
+
+        <h3>Selecciona una fruta</h3>
+        <select name="frutas" id="frutas">
+            <option value="">Selecciona una fruta</option>
+            <option value="Manzana">Manzana</option>
+            <option value="Banana">Banana</option>
+            <option value="Naranja">Naranja</option>
+        </select>
+        <p id="frutaseleccionada"></p>
+
+        <h3>Ingrese su nombre</h3>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        <p id="nombreInput"></p>
+
+        <form id="submitBtn">
+            <input type="text" name="nombre" placeholder="Ingrese algo">
+            <input type="submit" value="Enviar">
+        </form> 
+
+        <!-- Focus / Blur -->
+        <input type="text" id="focusBlur" placeholder="Ingrese algo">
+        <p id="mensaje"></p>
+    </div>
+
+
+
+
+    
+</body>
+<script src="EventHandlers.js"></script>
+</html>

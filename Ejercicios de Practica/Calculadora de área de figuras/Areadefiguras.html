@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de área de figuras</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .contenedor-principal {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .container {
+      width: 350px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    input:read-only {
+      background-color: #ddf3c6;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Calculadora de área de figuras</h1>
+
+  <div class="contenedor-principal">
+    <div class="container">
+      <h2>Triángulo</h2>
+      <form>
+        <div class="form-group">
+          <label for="base">Base</label>
+          <input type="number" id="base" name="base" oninput="CalcularTriangulo()">
+        </div>
+        <div class="form-group">
+          <label for="altura">Altura:</label>
+          <input type="number" id="altura" name="altura" oninput="CalcularTriangulo()">
+        </div>
+        <div class="form-group">
+          <label for="areaTriangulo">Área Calculada:</label>
+          <input type="number" id="areaTriangulo" name="areaTriangulo" readonly>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Rectángulo</h2>
+      <form>
+        <div class="form-group">
+          <label for="largo">Largo</label>
+          <input type="number" id="largo" oninput="CalcularRectangulo()">
+        </div>
+        <div class="form-group">
+          <label for="ancho">Ancho</label>
+          <input type="number" id="ancho"oninput="CalcularRectangulo()">
+        </div>
+        <div class="form-group">
+          <label for="areaRectangulo">Área Calculada</label>
+          <input type="number" id="areaRectangulo" readonly>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Círculo</h2>
+      <form>
+        <div class="form-group">
+          <label for="radio">Radio</label>
+          <input type="number" id="radio" oninput="CalcularCirculo()">
+        </div>
+        <div class="form-group">
+          <label for="areaCirculo">Área Calculada</label>
+          <input type="number" id="areaCirculo" readonly>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../Calculadora de área de figuras/Areadefiguras.js"></script>
+</body>
+
+</html>
